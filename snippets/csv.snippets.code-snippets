@@ -94,7 +94,7 @@
 	"Province Adjacencies": {
 		"prefix": "adjacency_prov",
 		"body": [
-			"${1:FromProvID};${2:ToProvID};${3|sea,land,impassable,canal};${4:ThroughProvID};${5:Data};${6:Comment}"
+			"${1:FromProvID};${2:ToProvID};${3|sea,land,impassable,canal|};${4:ThroughProvID};${5:Data};${6:Comment}"
 		],
 		"description": "Defining Adjacencies: 'Data' will always be '0' unless it is a canal; for impassable, use '0;0'"
 	},
