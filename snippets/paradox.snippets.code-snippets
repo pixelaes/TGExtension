@@ -740,7 +740,7 @@
         "prefix": "rename_prov_first",
         "body": [
             "# ${1:ProvID}",
-            "    any_land_province = { limit = { province_id = ${1} owner = { primary_culture = ${2|greek,turkish|} } } change_province_name = \"${3:Rename}\" }",
+            "    any_land_province = { limit = { province_id = ${1} owner = { primary_culture = polish has_country_flag = PLC_crimean_triumph_renaming_enabled } } change_province_name = \"${3:Rename}\" }",
             "",
             ""
         ],
@@ -752,7 +752,7 @@
         "body": [
             "# ${1:Region_Rename}",
             "    # ${2:ProvID}",
-            "        any_land_province = { limit = { province_id = ${2} owner = { primary_culture = ${3|greek,turkish|} } } change_province_name = \"${4:Province_Rename}\" state_scope = { change_region_name = \"${1:Region_Rename}\" } }",
+            "        any_land_province = { limit = { province_id = ${2} owner = { primary_culture = polish has_country_flag = PLC_crimean_triumph_renaming_enabled } } change_province_name = \"${4:Province_Rename}\" state_scope = { change_region_name = \"${1:Region_Rename}\" } }",
             "",
             "    "
         ],
@@ -762,7 +762,7 @@
     "Renaming Format - Province Only": {
         "prefix": "rename_prov",
         "body": [
-            "any_land_province = { limit = { province_id = ${1} owner = { primary_culture = ${2|greek,turkish|} } } change_province_name = \"${3:Rename}\" }"
+            "any_land_province = { limit = { province_id = ${1} owner = { primary_culture = polish has_country_flag = PLC_crimean_triumph_renaming_enabled } } change_province_name = \"${3:Rename}\" }"
         ],
         "description": "Standard IF emulation for renames for provs in the renaming event."
     },
@@ -770,7 +770,7 @@
     "Renaming Format - Province + State": {
         "prefix": "rename_region",
         "body": [
-            "any_land_province = { limit = { province_id = ${1:Province ID} owner = { primary_culture = ${2|greek,turkish|} } } change_province_name = \"${3:Province_Rename}\" state_scope = { change_region_name = \"${4:Region_Rename}\" } }"
+            "any_land_province = { limit = { province_id = ${1:Province ID} owner = { primary_culture = polish has_country_flag = PLC_crimean_triumph_renaming_enabled } } change_province_name = \"${3:Province_Rename}\" state_scope = { change_region_name = \"${4:Region_Rename}\" } }"
         ],
         "description": "Standard IF emulation for renames for capital provs in the renaming event."
     },
